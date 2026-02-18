@@ -110,7 +110,7 @@ async function loadDashboard() {
     try {
         const [dashRes, excusesRes] = await Promise.all([
             fetch(`${API}/stats/dashboard`),
-            fetch(`${API}/excuses?limit=15`),
+            fetch(`${API}/novedades?limit=15`),
         ]);
 
         if (!dashRes.ok || !excusesRes.ok) throw new Error('Error de red');
