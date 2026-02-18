@@ -5,6 +5,7 @@ const cors = require("cors");
 const path = require("path");
 
 const app = express();
+const PORT = process.env.PORT || 3000;
 
 app.use(cors({
   origin: '*'   // o 'http://127.0.0.1:5501' para ser más específico
@@ -181,4 +182,6 @@ app.get("/api/usuarios", async (req, res) => {
 });
 
 // ─── Inicio ──────────────────────────────────────────────────
-app.listen(PORT, () => console.log(`🚀 Servidor en http://localhost:${PORT}`));
+app.listen(PORT, () => {
+  console.log(`🚀 Servidor corriendo en el puerto ${PORT}`);
+});
