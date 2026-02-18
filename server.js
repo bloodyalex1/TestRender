@@ -15,6 +15,10 @@ app.use(express.static(path.join(__dirname, "public")));
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
+// ─── Inicio ──────────────────────────────────────────────────
+app.listen(PORT, () => {
+  console.log(`🚀 Servidor corriendo en el puerto ${PORT}`);
+});
 
 
 
@@ -181,7 +185,3 @@ app.get("/api/usuarios", async (req, res) => {
   }
 });
 
-// ─── Inicio ──────────────────────────────────────────────────
-app.listen(PORT, () => {
-  console.log(`🚀 Servidor corriendo en el puerto ${PORT}`);
-});
