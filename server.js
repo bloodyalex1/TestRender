@@ -181,4 +181,4 @@ app.get("/api/usuarios", async (req, res) => {
 });
 
 // ─── Inicio ──────────────────────────────────────────────────
-/* app.listen(PORT, () => console.log(`🚀 Servidor en http://localhost:${PORT}`)); */
+app.listen(PORT, () => console.log(`🚀 Servidor en http://localhost:${PORT}`));
