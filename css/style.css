@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+:root {
+  --bg-page: #eef2f7;
+  --riwi-dark: #121433;
+  --riwi-purple: #6e6cf0;
+  --status-red: #d93f3f;
+  --status-yellow: #f1c40f;
+  --status-green: #27ae60;
+}
+
+body {
+  background-color: var(--bg-page);
+  font-family: "Ubuntu", sans-serif;
+  color: #333;
+}
+
+/* Navbar */
+.custom-nav {
+  background-color: var(--riwi-dark);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 0;
+}
+
+/* Títulos */
+.title-purple {
+  color: var(--riwi-purple);
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.form-container-dark,
+.sidebar-dark-custom,
+.detail-card-dark {
+  background-color: var(--riwi-dark);
+  border-radius: 15px;
+  color: white !important;
+}
+
+.sidebar-dark-custom {
+  min-height: 80vh;
+}
+
+/* Inputs del Formulario */
+.custom-input {
+  background-color: #1c1f4a !important;
+  border: none;
+  color: #fff !important;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.upload-area {
+  border: 2px dashed #3a3d6a;
+  background-color: #1c1f4a;
+  padding: 30px;
+  border-radius: 10px;
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.btn-submit {
+  background: linear-gradient(90deg, #4e4cf0, #7b79ff);
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(110, 108, 240, 0.4);
+}
+
+/* Tarjetas Blancas de la Lista */
+.req-card-white {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  color: #333;
+  border: 2.5px solid var(--riwi-purple);
+}
+
+.req-id {
+  color: var(--riwi-purple);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.req-title {
+  font-weight: bold;
+  margin: 5px 0;
+  font-size: 0.85rem;
+}
+
+.req-date {
+  color: #999;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+/* Badges de Estado */
+[class^="badge-status-"] {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.65rem;
+  font-weight: bold;
+  color: white;
+}
+
+.badge-status-rechazada {
+  background-color: var(--status-red);
+}
+.badge-status-revision {
+  background-color: var(--riwi-dark);
+  border: 1px solid #555;
+}
+.badge-status-aprobada {
+  background-color: var(--status-green);
+}
+
+/* Paginación */
+.page-circle {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #555;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.page-circle.active {
+  background-color: white;
+  color: var(--riwi-dark);
+  border-color: white;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

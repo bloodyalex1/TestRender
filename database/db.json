@@ -1,0 +1,91 @@
+{
+    "excuses": {
+        "id":1,
+        "loadAverage": 35,
+        "processes": {
+            "running": 12,
+            "waiting": 8
+        },
+        "devices": {
+            "device1": 60,
+            "device2": 45
+        },
+        "processMetrics": {
+            "process1": 40,
+            "process2": 70,
+            "process3": 55
+        }
+    },
+    "history": [
+        {
+            "id": 1,
+            "timestamp": "2026-02-12T10:00:00Z",
+            "loadAverage": 42.3,
+            "cpuUsage": 65,
+            "memoryUsage": 78
+        },
+        {
+            "id": 2,
+            "timestamp": "2026-02-12T10:05:00Z",
+            "loadAverage": 48.1,
+            "cpuUsage": 72,
+            "memoryUsage": 81
+        },
+        {
+            "id": 3,
+            "timestamp": "2026-02-12T10:10:00Z",
+            "loadAverage": 51.7,
+            "cpuUsage": 68,
+            "memoryUsage": 75
+        },
+        {
+            "id": 4,
+            "timestamp": "2026-02-12T10:15:00Z",
+            "loadAverage": 46.2,
+            "cpuUsage": 70,
+            "memoryUsage": 79
+        },
+        {
+            "id": 5,
+            "timestamp": "2026-02-12T10:20:00Z",
+            "loadAverage": 44.8,
+            "cpuUsage": 66,
+            "memoryUsage": 76
+        },
+        {
+            "id": 6,
+            "timestamp": "2026-02-12T10:25:00Z",
+            "loadAverage": 49.3,
+            "cpuUsage": 73,
+            "memoryUsage": 82
+        },
+        {
+            "id": 7,
+            "timestamp": "2026-02-12T10:30:00Z",
+            "loadAverage": 45.5,
+            "cpuUsage": 69,
+            "memoryUsage": 77
+        }
+    ],
+    "alerts": [
+        {
+            "id": 1,
+            "severity": "warning",
+            "message": "Uso de CPU por encima del 70%",
+            "timestamp": "2026-02-12T10:25:00Z"
+        },
+        {
+            "id": 2,
+            "severity": "info",
+            "message": "Backup completado exitosamente",
+            "timestamp": "2026-02-12T10:15:00Z"
+        }
+    ],
+    "systemInfo": {
+        "hostname": "server-01",
+        "os": "Linux Ubuntu 24.04",
+        "uptime": "15 days, 7 hours",
+        "totalMemory": "16 GB",
+        "availableMemory": "3.5 GB"
+    }
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+  --bg-light: #e9ecf1; /* Fondo gris claro de la página */
+  --riwi-dark: #1e1e45; /* Fondo azul oscuro de los bloques */
+  --riwi-input: #2a2a5a; /* Fondo de los inputs */
+  --riwi-purple: #7c7cfc; /* Color de títulos y acentos */
+  --riwi-text-sec: #a0a0c0; /* Texto secundario */
+  --font-main: 'ubuntu'
+}
+
+body {
+  background-color: var(--bg-light);
+  font-family: var(--font-main);
+}
+
+/* Navbar */
+.custom-nav {
+  background-color: var(--riwi-dark);
+  padding: 15px 0;
+}
+
+/* Formulario */
+.form-container {
+  max-width: 600px;
+}
+
+.title-purple {
+  color: var(--riwi-purple);
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+.btn-back {
+  background-color: var(--riwi-dark);
+  color: white;
+  border-radius: 10px;
+  padding: 5px 20px;
+}
+
+.custom-input {
+  background-color: var(--riwi-input) !important;
+  border: none;
+  color: white !important;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.custom-input::placeholder {
+  color: #6c757d;
+}
+
+.upload-area {
+  background-color: var(--riwi-input);
+  border: 2px dashed #444;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.btn-submit {
+  background: linear-gradient(90deg, #303099, #5050ff);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: -1px 4px 28px -3px #5050ff;
+}
+
+/* Listado y Tarjetas */
+.card-main,
+.card-detail {
+  background-color: var(--riwi-dark);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.request-item {
+  background-color: var(--bg-light);
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.border-primary-custom {
+  border: 2px solid var(--riwi-purple);
+}
+
+.badge-status {
+  background-color: #444;
+  color: white;
+}
+
+/* Paginación */
+.pagination-custom span {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+
+.pagination-custom span.active {
+  background-color: white;
+  color: var(--riwi-dark);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

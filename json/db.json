@@ -1,0 +1,42 @@
+{
+  "registros": [
+    {
+      "id": "1",
+      "nombre": "kevin cano",
+      "correo": "kevinuser@gmail.com",
+      "password": "12345",
+      "role": "Usuario"
+    },
+    {
+      "id": "2",
+      "nombre": "kevin cano",
+      "correo": "kevinadmin@gmail.com",
+      "password": "123",
+      "role": "Administrador"
+    },
+
+    {
+      "id": "3",
+      "nombre": "kevin marulanda",
+      "correo": "kevinadmin2@gmail.com",
+      "password": "123",
+      "role": "Administrador"
+    },
+    {
+      "id": "1771021716624",
+      "nombre": "kevin cano",
+      "documento": "12345",
+      "correo": "kevin@gmail.com",
+      "password": "12345",
+      "role": "Usuario"
+    },
+    {
+      "id": "1771022112886",
+      "nombre": "ivan torres",
+      "documento": "00000",
+      "correo": "ivan@gmail.com",
+      "password": "12345",
+      "role": "Usuario"
+    }
+  ]
+}
