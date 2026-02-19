@@ -1,14 +1,14 @@
-console.log("Estoy en:", __dirname);
-const fs = require("fs");
-console.log("Contenido de public:", fs.readdirSync(path.join(__dirname, "public")));
-
-
-
 require("dotenv").config();
 const express = require("express");
 const mysql = require("mysql2/promise");
 const cors = require("cors");
 const path = require("path");
+console.log("Directorio actual:", __dirname);
+console.log("Contenido root:", fs.readdirSync(__dirname));
+console.log("Contenido public:", fs.readdirSync(path.join(__dirname, "public")));
+
+
+
 
 const app = express();
 const PORT = process.env.PORT || 3000;
