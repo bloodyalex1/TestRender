@@ -1,4 +1,6 @@
 console.log("Estoy en:", __dirname);
+const fs = require("fs");
+console.log("Contenido de public:", fs.readdirSync(path.join(__dirname, "public")));
 
 
 
@@ -16,9 +18,11 @@ app.use(cors({
 }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
+
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
+
 // ─── Inicio ──────────────────────────────────────────────────
 app.listen(PORT, () => {
   console.log(`🚀 Servidor corriendo en el puerto ${PORT}`);
